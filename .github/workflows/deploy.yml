@@ -21,6 +21,7 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
+          protocol: ftps
           server: ${{ secrets.FREEHOSTIA_FTP_SERVER }}
           username: ${{ secrets.FREEHOSTIA_FTP_USER }}
           password: ${{ secrets.FREEHOSTIA_FTP_PASS }}
