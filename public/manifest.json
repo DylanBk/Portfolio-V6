@@ -1,0 +1,16 @@
+{
+  "short_name": "Dylan Bullock | Software Developer",
+  "name": "Dylan's Portfolio",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "/index",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "description": "A portfolio showcasing my skills, abilities, experience and projects."
+}

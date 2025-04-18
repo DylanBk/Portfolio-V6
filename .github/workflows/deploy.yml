@@ -1,0 +1,29 @@
+name: Deploy to Host
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies and Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FREEHOSTIA_FTP_SERVER }}
+          username: ${{ secrets.FREEHOSTIA_FTP_USER }}
+          password: ${{ secrets.FREEHOSTIA_FTP_PASS }}
+          local-dir: './dist/'
+          server-dir: '/dylanbullock.co.uk/'
+          timeout: 300000
