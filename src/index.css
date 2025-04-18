@@ -65,12 +65,12 @@ html, body {
 
 @font-face {
   font-family: 'Nuku Nuku';
-  src: url('/src/fonts/Nuku1.ttf');
+  src: url('/src/fonts/NukuNuku.ttf') format('ttf');
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/src/fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+  src: url('/src/fonts/OpenSans.ttf') format('ttf');
 }
 
 .font-nukunuku {
