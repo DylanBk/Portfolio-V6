@@ -2,7 +2,7 @@ import pfp from '../../assets/images/d-pfp.png';
 
 import email from '../../assets/icons/email.svg';
 import github from '../../assets/icons/github.svg';
-import linkedIn from '../../assets/icons/linkedin.svg';
+import linkedIn from '../../assets/icons/linkedIn.svg';
 
 type Profile = {
     pfp: string,

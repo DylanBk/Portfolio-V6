@@ -1,6 +1,6 @@
 import email from '../../assets/icons/email.svg';
 import github from '../../assets/icons/github.svg';
-import linkedIn from '../../assets/icons/linkedin.svg';
+import linkedIn from '../../assets/icons/linkedIn.svg';
 
 export default function Footer() {
     return (
